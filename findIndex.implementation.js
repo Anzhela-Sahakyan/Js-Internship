@@ -4,7 +4,7 @@ function findIndex(array, cb) {
     currentItem = cb(array[idx], idx, array);
 
     if (currentItem) {
-      return (currentItem = array[idx]);
+      return idx;
     }
   }
   return -1;
